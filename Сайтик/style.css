@@ -27,6 +27,10 @@ header {
     margin-inline: 5%;
     margin-top: 50px;
 }
+#logo {
+    width: 200px;
+    height: 80px;
+}
 #tel{
     
     text-decoration: none;
@@ -35,20 +39,21 @@ header {
     align-items: center;
 }
 #contacts{
-    width: 150px;
+    width: 200px;
     height: 50px;
     margin-top: 20px;
     background-color: #E8D3B8;
     border-radius: 11px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15%;
 }
 #contacts a{
     text-align: center;
     text-decoration: none;
     font-size: 30px;
-    margin: auto auto;
-}
-#contacts a div{
-    margin: 10px auto;
 }
 #tel div{
     margin-left: 10px;
@@ -91,6 +96,7 @@ footer {
     height: 200px;
     background-color: #E8D3B8;
     margin-top: 50px;
+    margin-bottom: 0px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -99,8 +105,12 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 50%;
-    margin-block: 30px;
+    margin-block: 25px;
+}
+#Icons img{
+    width: 200px;
+    height: 80px;
+
 }
 .foot{
     color: black;
@@ -115,15 +125,27 @@ footer {
     margin-bottom: 30px;
 }
 #photo{
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
+    margin: 0 auto;
     margin-bottom: 70px;
-    
+    width: fit-content;
+    padding: 20px;
+}
+#photo img{
+    width: 100%;
+    max-width: 750px;
 }
 
 
 @media (max-width: 850px) {
+    #Icons img{
+        width: 100px;
+        height: 40px;
+    }
+    #Icons{
+        width: 90%;
+        justify-content: space-around;
+        
+    }
     #text{
         width: 80%;
     }
@@ -143,17 +165,11 @@ footer {
     #text {
         line-height: 20px;
     }
-    #Icons img{
-        width: 100px;
-        height: 40px;
-    }
-    #Icons{
-        width: 90%;
-    }
+    
     .foot{
         font-size: 16px;
     }
-    header div img{
+    #logo {
         width: 100px;
         height: 40px;
     }
@@ -171,19 +187,12 @@ footer {
         width: 100%;
     }
     #text{
-        font-size: 10pt;
+        font-size: 14pt;
     }
     #welcome{
         font-size: 14pt;
     }
     footer{
         height: 200px;
-    }
-}
-
-
-@media (max-width: 425px) {
-    #text{
-        font-size: 30px;
     }
 }
